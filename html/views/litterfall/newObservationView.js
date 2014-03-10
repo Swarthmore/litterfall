@@ -35,12 +35,12 @@ define([
 				onSelect: function() {
 					$(".ui-datepicker a").removeAttr("href");
 				}
-			});
+			});*/
 			var today = new Date();
 			today = (today.getMonth() + 1) + "/" + today.getDate() +  "/" + today.getFullYear();
 			//console.log(today);
 			
-			$("#date").val(today);*/
+			//$("#date").val(today);
 			$(".btn-save").click(self.save);
 			$(".clear").click(this.clear);
 			$(".clearall").click(this.clearAll);
