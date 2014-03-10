@@ -26,7 +26,7 @@ define([
 				});
 				self.addValidate();
 			});
-			$("#date").datepicker({
+			/*$("#date").datepicker({
 				maxDate: 0,
 				changeYear: true,
 				changeMonth: true,
@@ -40,7 +40,7 @@ define([
 			today = (today.getMonth() + 1) + "/" + today.getDate() +  "/" + today.getFullYear();
 			//console.log(today);
 			
-			$("#date").val(today);
+			$("#date").val(today);*/
 			$(".btn-save").click(self.save);
 			$(".clear").click(this.clear);
 			$(".clearall").click(this.clearAll);

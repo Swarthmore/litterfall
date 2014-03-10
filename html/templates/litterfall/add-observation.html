@@ -44,7 +44,9 @@
     	<select id="plot" class="plot select">
     		<option class="placeholder">Choose plot...</option>
     		<option>1</option>
-			<option>2</option></select>
+		<option>2</option>
+		<option>3</option>
+	</select>
     	<select id="type" class="type select">
     		<option class="placeholder type">Choose collection type...</option>
     		<option value="Standing">Standing</option>
@@ -62,11 +64,11 @@
     	<input type="text" id="observers" class="input observers" placeholder="Observers"></input>
     	<textarea id="notes" class="input notes" rows=1 placeholder="Notes"></textarea><br>
     	<div style='display:none' class='alert alert-danger warning'>Please complete the above information before proceeding. Errors are highlighted in red.</div>
-		<div style='display:none' class='alert alert-warning trap-warning'>You haven't entered any trap data. If this is on purpose, simply hit Save again to finalize.</div>
-		<button class="btn btn-danger clearall">Clear All</button>
-    	<button class="btn btn-success btn-save">Save</button><br><br>
+		<div style='display:none' class='alert alert-warning trap-warning'>You haven't entered any trap data. If this is on purpose, simply hit Submit again to finalize.</div>
+	<button class="btn btn-danger clearall">Clear All</button>
+    	<button class="btn btn-success btn-save">Submit</button><br><br>
     	</div>
-		<p>Enter weight (in grams) of leaves or other material (click Save to finalize).</p>
+		<p>Enter weight (in grams) of leaves or other material.</p>
 		<h5>Non-leaf material:</h5><table class='table table-striped data_table' id='non-leaf-table'>
 		<tr>
 		<th>Sample Type</th>
@@ -125,7 +127,8 @@
 		</tr>
 		</table>
   	</form>
-  	 <button class="btn btn-success btn-save">Save</button>
+	<button class="btn btn-danger clearall">Clear All</button>
+    	<button class="btn btn-success btn-save">Submit</button>
 	<br>
     </div> <!-- /container -->
     <footer>
