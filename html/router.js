@@ -80,10 +80,10 @@
 			var  template_file = 'litterfall/access-landing.html';
 			require(['lib/text!templates/' + template_file + '!strip'], function(templateHTML){			
 				$('#main').html(templateHTML);
-				$('#query-records').click(function(){	
+				$('#analyze-data').click(function(){	
 						document.location.hash = "data/litterfall/reports";
 				});
-				$('#new-observation').click(function(){														//waits for user to select plot
+				$('#update-records').click(function(){														//waits for user to select plot
 						document.location.hash = "data/litterfall/add";
 				});
 			});
